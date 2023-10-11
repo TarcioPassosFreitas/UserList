@@ -1,0 +1,25 @@
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon {
+    font-size: 1rem;
+  }
+}
+
+.pagination {
+  justify-content: center;
+}
