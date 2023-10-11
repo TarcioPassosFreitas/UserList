@@ -1,66 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Aplicação de Lista de Usuários com Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Esta é uma aplicação baseada no Laravel, projetada para atender aos requisitos do teste técnico. Ela consome uma API para obter uma lista de usuários e os exibe em uma tabela paginada. Os usuários também podem ser editados e excluídos.
 
-## About Laravel
+## Índice
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [Requisitos](#requisitos)
+  - [Configuração do Laravel](#configuração-do-laravel)
+  - [Divisão de Tarefas](#divisão-de-tarefas)
+  - [Consumo da API](#consumo-da-api)
+  - [Tabela de Usuários Paginada](#tabela-de-usuários-paginada)
+  - [Implementação Técnica](#implementação-técnica)
+- [Passos para Instalação](#passos-para-instalação)
+- [Notas Adicionais](#notas-adicionais)
+- [Conclusão](#conclusão)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requisitos
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Configuração do Laravel
 
-## Learning Laravel
+Esta aplicação foi construída em Laravel, que deve estar instalado no seu ambiente de desenvolvimento. O ambiente está configurado para executar o Laravel corretamente.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Divisão de Tarefas
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Aqui está uma lista passo a passo das tarefas concluídas para alcançar os objetivos do projeto:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. Instalado o Laravel e configurado o ambiente.
+2. Configurado o roteamento para consumir a API.
+3. Criado um controlador que consome a API e aplica lógica de paginação.
+4. Criadas as visualizações para exibir os dados do usuário em uma tabela paginada.
+5. Estilizada a tabela e a página usando o Bootstrap.
 
-## Laravel Sponsors
+### Consumo da API
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+A aplicação utiliza o cliente HTTP do Laravel para fazer solicitações à API. A API usada é [URL da API](https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0).
 
-### Premium Partners
+### Tabela de Usuários Paginada
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Os dados do usuário obtidos da API são exibidos em uma tabela paginada, mostrando 10 usuários por página. Rotas, controladores e visualizações são desenvolvidos em Laravel para alcançar isso.
 
-## Contributing
+### Implementação Técnica
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- O Laravel é usado no backend para configurar o ambiente, criar rotas, controladores e visualizações.
+- Funcionalidades do Laravel são utilizadas para fazer solicitações HTTP à API.
+- Lógica de paginação é implementada para exibir os dados do usuário em grupos (10 usuários por página).
+- Bootstrap é usado para estilização.
 
-## Code of Conduct
+## Passos para Instalação
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. Clone o repositório
+2. Execute `composer install`
+3. Execute `php artisan serve`
 
-## Security Vulnerabilities
+## Notas Adicionais
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- A aplicação segue as melhores práticas do Laravel em relação à estrutura do projeto, organização do código e uso de bibliotecas.
+- Não foram encontradas limitações ou suposições significativas durante o desenvolvimento.
 
-## License
+## Conclusão
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Esta aplicação consome com sucesso a API e exibe os dados do usuário em uma tabela paginada, cumprindo os requisitos de avaliação para configurar o Laravel, consumir APIs e criar interfaces de usuário.
+
+
+## Licença
+
+O framework Laravel é um software de código aberto licenciado sob a [licença MIT](https://opensource.org/licenses/MIT).
